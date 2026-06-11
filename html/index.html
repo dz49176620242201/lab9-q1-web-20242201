@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 9 Docker Container - 20242201</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Basic Development and Operation</p>
+          <h1>Docker Container Deployment</h1>
+          <p class="lede">
+            This page is served from an Nginx Docker image and deployed with Docker Compose.
+          </p>
+          <dl class="student-grid">
+            <div>
+              <dt>Student ID</dt>
+              <dd>20242201</dd>
+            </div>
+            <div>
+              <dt>Class</dt>
+              <dd>242</dd>
+            </div>
+            <div>
+              <dt>Lab</dt>
+              <dd>Lab 9 Question 1</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="status-panel" aria-label="Deployment status">
+          <div class="status-ring">
+            <span>80</span>
+          </div>
+          <h2>Nginx container ready</h2>
+          <p>Image target: <strong>lab9-q1-web</strong></p>
+          <p>Compose port: <strong>8105:80</strong></p>
+          <button type="button" id="healthButton">Check page status</button>
+          <p id="healthStatus" class="status-text">Waiting for check.</p>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

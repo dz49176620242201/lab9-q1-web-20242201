@@ -1,0 +1,7 @@
+services:
+  web:
+    image: ${DOCKER_HUB_USERNAME:-your-docker-user}/lab9-q1-web:latest
+    pull_policy: always
+    ports:
+      - "8105:80"
+    restart: unless-stopped
